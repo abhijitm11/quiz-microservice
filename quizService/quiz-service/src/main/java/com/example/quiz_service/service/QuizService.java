@@ -10,5 +10,5 @@ public interface QuizService {
 
     List<Quiz> findAll();
 
-    Quiz findById(ObjectId id);
+    Quiz findById(String id);
 }

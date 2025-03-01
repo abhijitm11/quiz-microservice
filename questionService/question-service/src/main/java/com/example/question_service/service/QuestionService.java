@@ -10,7 +10,7 @@ public interface QuestionService {
 
     List<Question> getAllQuestions();
 
-    Question getQuestionById(ObjectId questionId);
+    Question getQuestionById(String questionId);
 
-    List<Question> getQuestionsOfQuiz(ObjectId quizId);
+    List<Question> getQuestionsOfQuiz(String quizId);
 }

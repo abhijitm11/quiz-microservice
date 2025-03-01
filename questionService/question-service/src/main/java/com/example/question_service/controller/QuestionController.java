@@ -26,12 +26,12 @@ public class QuestionController {
     }
 
     @GetMapping("/{questionId}")
-    public Question getAll(@PathVariable ObjectId questionId) {
+    public Question getAll(@PathVariable String questionId) {
         return questionService.getQuestionById(questionId);
     }
 
     @GetMapping("/quiz/{quizId}")
-    public List<Question> getQuestionsOfQuiz(@PathVariable ObjectId quizId) {
+    public List<Question> getQuestionsOfQuiz(@PathVariable String quizId) {
         return questionService.getQuestionsOfQuiz(quizId);
     }
 

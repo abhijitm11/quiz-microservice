@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface QuestionRepository extends MongoRepository<Question, ObjectId> {
-    List<Question> findByQuizId(ObjectId quizId);
+public interface QuestionRepository extends MongoRepository<Question, String> {
+    List<Question> findByQuizId(String quizId);
 }

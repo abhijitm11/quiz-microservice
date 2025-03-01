@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
@@ -13,8 +14,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @Document(collection = "question")
 public class Question {
-
-    private ObjectId id;
+    @Id
+    private String id;
     private String question;
-    private ObjectId quizId;
+    private String quizId;
 }
